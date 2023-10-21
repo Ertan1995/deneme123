@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" media="(max-width:500px)">
+    <title>15-Media-Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container>* {
+            text-transform: capitalize;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: cadetblue;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container div {
+            margin-top: 50px;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        /* Smartphone */
+        @media (max-width: 500px) {
+            .container {
+                background: purple;
+            }
+
+            #smartphone {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 501px) and (max-width: 768px) {
+            .container {
+                background: yellowgreen;
+            }
+
+            #tablet {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .container {
+                background: burlywood;
+            }
+
+            #normal {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        /* Widescreen */
+        @media (min-width: 1201px) {
+            .container {
+                background: darkblue;
+            }
+
+            #widescreen {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        /* Landscape */
+        @media (max-height: 500px) {
+            .container {
+                background: brown;
+            }
+
+            #landscape {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>External Css Media Query</h1>
+        <div id="smartphone">smartphone</div>
+        <div id="tablet">tablet</div>
+        <div id="normal">normal</div>
+        <div id="widescreen">widescreen</div>
+        <div id="landscape">landscape</div>
+    </div>
+</body>
+
+</html>

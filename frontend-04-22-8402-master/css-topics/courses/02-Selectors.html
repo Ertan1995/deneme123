@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* Tag Selector */
+        h2 {
+            color: brown;
+        }
+        main {
+            text-align: center;
+        }
+        
+        /* Class Selector */
+        .title {
+            text-decoration: underline;
+            color: chocolate;
+        }
+
+        /* Id Selector */
+        #list-title-1 {
+            color: darkblue;
+        }
+
+        /* All children */
+        main ul {
+            background-color: blueviolet;
+        }
+
+        /* Direct child */
+        main>ul{
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2 class="title">Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minima velit numquam maxime ad quam deserunt
+            iusto, nulla rerum vel?</p>
+        <ul>
+            <h2 class="title" id="list-title-1">This is the list title</h2>
+            <li>Lorem.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <ul>
+            <h3 class="title" id="list-title-2">This is the list title</h3>
+            <li>Lorem.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <div class="">
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

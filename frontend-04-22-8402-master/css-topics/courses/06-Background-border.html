@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Border</title>
+    <style>
+        #box-1 {
+            background-color: chocolate;
+            color: #f4f4f4;
+            border-width: 4px;
+            border-style: solid;
+            border-color: black;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        #box-2 {
+            background: #333;
+            color: #fff;
+            border-top: 4px solid red;
+            border-right: 8px groove blue;
+            border-bottom: 12px double green;
+            border-left: 16px groove yellow;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 20px;
+
+
+            /* border-radius: 25%; */
+        }
+
+        #box-3 {
+            color: #fff;
+            border: 5px solid black;
+            
+            background-image: url("../img/stars.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-position: center center;
+            background-size: cover;
+            
+            background: url("../img/stars.jpg") no-repeat center center/cover;
+
+            height: 1200px;
+            width: 2000px;
+        }
+
+        #box-4 {
+            margin-top:10px;
+            border: 5px solid black;
+            height: 3200px;
+            width: 2000px;
+            background: url("../img/leaf.png") no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-1">
+        <h3>Box-1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, soluta.</p>
+    </div>
+    <div id="box-2">
+        <h3>Box-2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, soluta.</p>
+    </div>
+    <div id="box-3">
+        <h3>Box-3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, soluta.</p>
+    </div>
+    <div id="box-4">
+        <h3>Box-4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, soluta.</p>
+    </div>
+</body>
+
+</html>

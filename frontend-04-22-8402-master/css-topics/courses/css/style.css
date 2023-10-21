@@ -1,0 +1,13 @@
+body {
+    background-color: palevioletred;
+    /* color: #f4f4f4; */
+}
+
+h1 {
+    color: rgb(207, 184, 125);
+}
+
+
+p {
+    text-align: right !important;
+}

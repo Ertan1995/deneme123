@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <style>
+        /* Css Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe', Tahoma;
+        }
+
+        :root {
+            --primary-color: rgb(207, 167, 46);
+            --secondary-color: rgb(207, 81, 46);
+            --dark-color: #333;
+            --light-color: #f4f4f4;
+            --primary-theme: cadetblue;
+            --secondary-theme: rgb(95, 111, 160);
+            --default-transition: .5s;
+        }
+
+        body {
+            background-color: var(--primary-theme);
+        }
+
+        main {
+            width: 90%;
+            margin: 0 auto;
+            /* border: 3px solid black; */
+        }
+
+        .btn {
+            font-weight: 900;
+            font-size: 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--secondary-theme);
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: var(--default-transition);
+        }
+
+        .btn:hover {
+            opacity: .85;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+        }
+
+        .btn-dark {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+        }
+
+        .btn-light {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--light-color);
+            border: 2px solid var(--light-color);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <br>
+        <button class="btn">Submit</button>
+
+        <a href="" class="btn btn-primary">Submit</a>
+        <a href="" class="btn btn-secondary">Submit</a>
+        <a href="" class="btn btn-dark">Submit</a>
+        <a href="" class="btn btn-light">Submit</a>
+        <a href="" class="btn btn-outline">Submit</a>
+
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </main>
+</body>
+
+</html>

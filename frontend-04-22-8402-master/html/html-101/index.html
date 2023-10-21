@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 101</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Heading -->
+    <h1>Hello BilgeAdam!</h1>
+    <h2>Hello BilgeAdam!</h2>
+    <h3>Hello BilgeAdam!</h3>
+    <h4>Hello BilgeAdam!</h4>
+    <h5>Hello BilgeAdam!</h5>
+    <h6>Hello BilgeAdam!</h6>
+
+    <!-- Paragraph -->
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quia quos rerum ullam assumenda tempore, animi
+        totam et minima perferendis aperiam magni blanditiis ad adipisci suscipit quae mollitia consequuntur nostrum?
+        Optio, quo voluptatibus! Laborum ullam porro veritatis? Non blanditiis pariatur ea in aspernatur, dolores odit
+        mollitia laborum, facilis minus veniam dignissimos similique? Aliquam quisquam voluptatibus magni in veritatis
+        repudiandae porro!
+        Soluta explicabo dolores enim nam unde. Eius nesciunt a provident suscipit temporibus ad possimus expedita
+        laboriosam! Inventore consectetur ut repellat facere magnam id, mollitia aspernatur similique quibusdam porro
+        culpa voluptatum.
+    </p>
+
+    <!-- Image - Gorsel -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+        alt="html5-icon" width="100" />
+    <img src="media/css-icon.png" alt="css3-icon" width="100">
+
+    <!-- Bir satir asagiya atar -->
+    <br><br>
+
+    <!-- Anchor Tag -->
+    <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+    <a href="https://developer.mozilla.org/" target="_blank">MDN</a>
+    <a href="about.html">About</a>
+    <a href="#html-intro">Jump to Html Section</a>
+
+    <br><br>
+
+    <!-- Horizontal Rule -->
+    <hr>
+
+    <!-- Ordered List -->
+    <ol>
+        <!-- List Item -->
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <!-- Division -->
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="media/css-icon.png" alt="css3-icon css-logo" width="100">
+        <img src="media/css-icon.png" alt="css3-icon" width="100">
+    </div>
+    <img src="media/css-icon.png" alt="css3-icon" width="100">
+
+    <!-- Span -->
+    <p>Lorem ipsum dolor <span>sit amet</span> consectetur adipisicing elit. Deserunt soluta tempora earum nobis quis
+        veritatis unde
+        assumenda vel reprehenderit sed!</p>
+
+    <!-- Class:  . -->
+    <p class="title">Lorem, ipsum.</p>
+    <p class="title underline">Lorem, ipsum.</p>
+
+    <!-- Id:  # -->
+    <p class="title" id="html-intro">Html dersine hosgedliniz!</p>
+
+    <div class="student-table">
+        <table>
+            <!-- Table Row -->
+            <tr>
+                <!-- Table Header -->
+                <th>Name</th>
+                <th>Instructor</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <!-- Table Data -->
+                <td>Mahir Kursun</td>
+                <td>Orkun Durmaz</td>
+                <td>Frontend Dev</td>
+            </tr>
+            <tr>
+                <!-- Table Data -->
+                <td>Sakip Han Dursun</td>
+                <td>Orkun Durmaz</td>
+                <td>React Native</td>
+            </tr>
+            <tr>
+                <!-- Table Data -->
+                <td>Firat Can Tas</td>
+                <td>Ridvan Aksoy</td>
+                <td>Boost .Net</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <!-- 3 adet tablo, 5 girdi ile yaratilacak. Favori Filmler, Kitaplar, Parcalar -->
+    <!-- Filmler: Film Adi, Film Yonetmeni, Link (IMDB), Gorsel -->
+    <!-- Parcalar: Parca Adi, Muzisyen, Link (Wiki), Album Gorsel -->
+    <!-- Kitap: Kitap Adi, Yazar, Link (Goodreads), Kitap Gorsel -->
+
+    <div class="table-tags-example">
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$80</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Sum</td>
+                    <td>$180</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <form>
+        <!-- <label for="first-name">First Name: </label>
+        <input type="text" placeholder="First Name" name="first-name" required="true"> -->
+
+        <br><br>
+
+        <label for="last-name">Last Name:
+            <input type="text" placeholder="Last Name" name="last-name">
+        </label>
+
+        <br><br>
+
+        <input type="email" placeholder="Email" name="" id="">
+        <br><br>
+
+        <input type="number" placeholder="Age" name="" id="">
+        <br><br>
+
+        <input type="submit" value="Gönder">
+
+        <!-- <input type="button" value="Button"> -->
+
+        <!-- <button>Submit</button> -->
+        <br><br>
+
+        <input type="radio" name="frontend-framework" value="react">
+        <label for="">React.js</label>
+        <input type="radio" name="frontend-framework" value="vue">
+        <label for="">Vue</label>
+        <input type="radio" name="frontend-framework" value="svelte">
+        <label for="">Svelte</label>
+
+        <br><br>
+
+        <input type="checkbox" name="backend-framework" value="node">
+        <label for="">Node.js</label>
+        <input type="checkbox" name="backend-framework" value="django">
+        <label for="">Django</label>
+        <input type="checkbox" name="backend-framework" value="spring">
+        <label for="">Spring</label>
+
+        <br><br>
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+
+        <input type="month">
+        <input type="password">
+        <input type="range">
+        <input type="reset">
+        <input type="time">
+        <input type="week">
+    </form>
+</body>
+
+</html>
